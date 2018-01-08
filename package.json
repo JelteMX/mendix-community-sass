@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/make.js",
     "install": "node scripts/update-helpers.js",
+    "watch": "node scripts/watch.js",
     "doc": "sassdoc .",
     "update-helpers": "node scripts/update-helpers.js",
     "lint": "node ./node_modules/.bin/sass-lint -c '.sass-lint.yml' 'src/**/*.scss' -v -q"
