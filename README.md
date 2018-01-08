@@ -1,7 +1,9 @@
 Community Sass Files
 ===
 
-These sass files are used by the Community Team to style the various Community products like Forum, Developer/Partner Profile, Documentation. This is work in progress
+These sass files are used by the Community Team to style the various Community products like Forum, Developer/Partner Profile, Documentation.
+
+> **Do not use. Work in progress**
 
 ## Usage
 
