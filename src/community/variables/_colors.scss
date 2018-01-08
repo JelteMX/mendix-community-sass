@@ -1,0 +1,28 @@
+// Colors
+
+// Primary
+// Naming convention: $color-{colorName}-{variant}
+
+$color-black: #000;
+
+$color-charcoal: lighten($color-black, 13.33); // #222222
+$color-smoke: lighten($color-black, 33.33); // #555555;
+$color-smog: lighten($color-black, 53.33); // #888888;
+$color-silver: lighten($color-black, 86.27); // #dcdcdc;
+$color-silver-secondary: darken($color-silver, 15.29); // #b5b5b5;
+$color-white-smoke: lighten($color-black, 93.73); // #f0f0ee;
+
+$color-white: #fff;
+
+$color-blue-sky: #0595db;
+$color-blue-mendix: #1780b9;
+$color-blue-cobalt: #0e61af;
+$color-blue-dark: #2d3e4e;
+
+$color-purple: #bc5cec;
+
+$color-green-tulip: #76ca02;
+
+$color-red: #ea202d;
+
+$color-orange-goldfish: #f99b1d;
