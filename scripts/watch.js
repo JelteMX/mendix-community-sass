@@ -21,9 +21,9 @@ const cleanFiles = () => {
 }
 
 const copyFiles = () => {
-    try {
-        cleanFiles();
-    } catch (e) {}
+    // try {
+    //     cleanFiles();
+    // } catch (e) {}
 
     cp('-r', 'src/*', targetFolder);
 

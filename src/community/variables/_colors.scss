@@ -1,6 +1,6 @@
 // Colors
 
-// Primary
+// Primary colors (these are used throughout)
 // Naming convention: $color-{colorName}-{variant}
 
 $color-black: #000;
@@ -26,3 +26,9 @@ $color-green-tulip: #76ca02;
 $color-red: #ea202d;
 
 $color-orange-goldfish: #f99b1d;
+
+// Color naming
+// Naming convention: $color-n-{name}
+
+$color-n-developer-blue: $color-blue-dark;
+$color-n-link-color: $color-blue-sky;

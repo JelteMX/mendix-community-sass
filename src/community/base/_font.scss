@@ -1,0 +1,121 @@
+@mixin set-font($size, $color: $color-smoke, $family: $font-family-san-serif, $weight: false, $line-height: false) {
+    &,
+    & > * {
+        color: $color;
+        font-family: $family;
+        font-size: $size;
+        @if $weight != false {
+            font-weight: $weight;
+        }
+        @if $line-height != false {
+            line-height: $line-height;
+        }
+        margin: 0;
+    }
+}
+
+.text-header-1 {
+    @include set-font(
+        48px,
+        $color-blue-sky,
+        $font-family-san-serif,
+        300,
+        64px
+    )
+}
+
+.text-header-2 {
+    @include set-font(
+        36px,
+        $color-smoke,
+        $font-family-san-serif,
+        700,
+        48px
+    )
+}
+
+.text-header-3 {
+    @include set-font(
+        24px,
+        $color-smoke,
+        $font-family-san-serif,
+        false,
+        64px
+    )
+}
+
+.text-header-4 {
+    @include set-font(
+        18px,
+        $color-smoke,
+        $font-family-san-serif,
+        false,
+        64px
+    )
+}
+
+.text-header-5 {
+    @include set-font(
+        16px,
+        $color-smoke,
+        $font-family-san-serif,
+        600,
+        64px
+    )
+}
+
+.text-header-6 {
+
+}
+
+.text-paragraph-normal {
+    @include set-font(
+        14px,
+        $color-smoke,
+        $font-family-san-serif,
+        false,
+        24px
+    )
+}
+
+.text-paragraph-small {
+    @include set-font(
+        12px,
+        $color-smoke,
+        $font-family-san-serif,
+        false,
+        24px
+    )
+}
+
+.text-paragraph-large {
+    @include set-font(
+        16px,
+        $color-smoke,
+        $font-family-san-serif,
+        false,
+        24px
+    )
+}
+
+.link {
+    &,
+    &.mx-link {
+        color: $color-blue-sky;
+
+        &:visited {
+            color: darken($color-blue-sky, 20%);
+        }
+    }
+}
+
+.no-focus {
+    &.active,
+    &.btn,
+    &.btn.active,
+    &.mx-focus {
+        &, &:focus {
+            outline: none;
+        }
+    }
+}

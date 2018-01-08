@@ -32,5 +32,5 @@
     "watch": "^1.0.2"
   },
   "sass-helpers-version": "1.0.1",
-  "buildFolder": "build"
+  "buildFolder": "/Volumes/C/Projects/MendixProjects/MxForum-main/theme/sass/mendix-community-sass"
 }
