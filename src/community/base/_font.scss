@@ -1,12 +1,9 @@
-@mixin set-font($size, $color: $color-smoke, $family: $font-family-san-serif, $weight: false, $line-height: false) {
+@mixin set-font($size, $color: $color-smoke, $family: $font-family-san-serif, $line-height: false) {
     &,
     & > * {
         color: $color;
         font-family: $family;
         font-size: $size;
-        @if $weight != false {
-            font-weight: $weight;
-        }
         @if $line-height != false {
             line-height: $line-height;
         }
@@ -14,86 +11,94 @@
     }
 }
 
+@mixin font-weight-light {
+    font-weight: $font-weight-light;
+}
+@mixin font-weight-normal {
+    font-weight: $font-weight-normal;
+}
+@mixin font-weight-semibold {
+    font-weight: $font-weight-semibold;
+}
+@mixin font-weight-bold {
+    font-weight: $font-weight-bold;
+}
+
 .text-header-1 {
     @include set-font(
-        48px,
+        $font-size-h1,
         $color-blue-sky,
         $font-family-san-serif,
-        300,
         64px
     )
+    @include font-weight-light;
 }
 
 .text-header-2 {
     @include set-font(
-        36px,
+        $font-size-h2,
         $color-smoke,
         $font-family-san-serif,
-        700,
         48px
     )
+    @include font-weight-light;
 }
 
 .text-header-3 {
     @include set-font(
-        24px,
+        $font-size-h3,
         $color-smoke,
         $font-family-san-serif,
-        false,
         64px
     )
 }
 
 .text-header-4 {
     @include set-font(
-        18px,
+        $font-size-h4,
         $color-smoke,
         $font-family-san-serif,
-        false,
         64px
     )
 }
 
 .text-header-5 {
     @include set-font(
-        16px,
+        $font-size-h5,
         $color-smoke,
         $font-family-san-serif,
-        600,
         64px
     )
+    @include font-weight-semibold;
 }
 
 .text-header-6 {
-
+    font-size: $font-size-h6
 }
 
 .text-paragraph-normal {
     @include set-font(
-        14px,
+        $font-size-normal,
         $color-smoke,
         $font-family-san-serif,
-        false,
         24px
     )
 }
 
 .text-paragraph-small {
     @include set-font(
-        12px,
+        $font-size-small,
         $color-smoke,
         $font-family-san-serif,
-        false,
         24px
     )
 }
 
 .text-paragraph-large {
     @include set-font(
-        16px,
+        $font-size-big,
         $color-smoke,
         $font-family-san-serif,
-        false,
         24px
     )
 }
@@ -114,7 +119,8 @@
     &.btn,
     &.btn.active,
     &.mx-focus {
-        &, &:focus {
+        &,
+        &:focus {
             outline: none;
         }
     }

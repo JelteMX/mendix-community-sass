@@ -24,6 +24,16 @@ In the top! This is important, as the rest of the custom styling will use a grea
 
 Updating these files should not break, check the release notes for any breaking changes (this can be in terms of changing variable names etcetera)
 
+## Prerequisites
+
+### Font
+
+- We use **Open Sans** as the base font for these tools. Please add the following stylesheet to your HTML:
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css"/>
+```
+
 ## License
 
 The MIT License (MIT)

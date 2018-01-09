@@ -6,3 +6,5 @@ node_modules
 sass-helpers.zip
 src/community/helpers/*
 yarn-error.log
+
+INVENTORY.md
